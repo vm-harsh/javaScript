@@ -1,0 +1,101 @@
+@font-face {
+  font-family: netflix-sans;
+  src: url('./fonts/netflix-sans-core.woff2');
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  color:gray;
+  font-family: netflix-sans;
+}
+
+body{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container{
+  background-color: white;
+  padding: 10px;
+  border-radius: 40px;
+}
+
+
+.input{
+  width: 300px;
+  padding: 30px 30px;
+  font-size: 30px;
+  border-radius: 30px;
+  text-align: end;
+  margin-bottom: 15px;
+  border:none;
+  outline: none;
+  box-shadow: 0px 1px 4px black;
+  color:black;
+  background-color: rgb(230, 217, 217);
+}
+
+hr{
+  margin-bottom: 10px;
+}
+
+.btn-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 6px;
+  width: fit-content;
+  margin: auto;
+}
+
+
+
+.btn{
+  font-size: 20px;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  box-shadow: 1px 2px 2px gray;
+  border:none;
+}
+
+.theme{
+  grid-column: span 4;
+  width: 100%;
+  border-radius: 40px;
+  border: none;
+
+}
+
+#ac-btn{
+  background-color: #e4500c;
+  color:white;
+  border:none;
+}
+
+#sub{
+  grid-row: span 2;
+  height: 100%;
+  border-radius: 40px;
+}
+
+
+#plus{
+  grid-row: span 2;
+  height: 100%;
+  border-radius: 40px;
+}
+
+#equal{
+  background-color: #e4500c;
+  grid-column: span 2;
+  width: 100%;
+  border-radius: 40px;
+  color:white;
+  border: none;
+}
