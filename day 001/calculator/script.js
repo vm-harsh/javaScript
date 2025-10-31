@@ -7,17 +7,17 @@ let theme = "";
 
 
 let savedTheme = localStorage.getItem('theme');
-document.body.classList.add(savedTheme);
+savedTheme && document.body.classList.add(savedTheme);
 
 themebtn.addEventListener('click',()=>{
   if(theme === 'dark'){
     theme = '';
-    themebtn.innerHTML = 'light'
+    themebtn.innerHTML = 'Light'
     document.body.classList.remove('dark');
   }
   else{
     theme = 'dark';
-    themebtn.innerHTML = 'dark'
+    themebtn.innerHTML = 'Dark'
     document.body.classList.add('dark');
 
   }
