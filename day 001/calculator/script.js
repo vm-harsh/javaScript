@@ -1,7 +1,28 @@
 const buttons = document.querySelectorAll('.btn');
 const input = document.querySelector('.input');
+const themebtn = document.querySelector('.theme');
 let hasError = false;
 let eqn = "";
+let theme = "";
+
+
+let savedTheme = localStorage.getItem('theme');
+document.body.classList.add(savedTheme);
+
+themebtn.addEventListener('click',()=>{
+  if(theme === 'dark'){
+    theme = '';
+    themebtn.innerHTML = 'light'
+    document.body.classList.remove('dark');
+  }
+  else{
+    theme = 'dark';
+    themebtn.innerHTML = 'dark'
+    document.body.classList.add('dark');
+
+  }
+  localStorage.setItem('theme',theme)
+})
 
 
 
